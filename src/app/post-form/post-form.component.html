@@ -1,0 +1,12 @@
+<div>
+  <input type="text" class="from-control" placeholder="Title..."
+         [(ngModel)]="title" #titleInput
+  >
+  <input type="text" class="from-control" placeholder="Text..."
+         [(ngModel)]="text"
+
+  >
+  <button class="btn" (click)="addPost()" (keydown.enter)="addPost()">Добавить пост</button>
+  <button class="btn" (click)="focusTitle()">Focus Title</button>
+
+</div>
